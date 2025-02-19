@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm [Your Name], a Web Developer.</p>
+            <button><a href="#projects">View My Projects</a></button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate web developer with experience in building modern websites.</p>
+            <p>My skills include HTML, CSS, JavaScript, and more.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>This is a description of Project 1. A great project that showcases my skills.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-status"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Your Name | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
