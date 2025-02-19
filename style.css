@@ -1,124 +1,92 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Header Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header {
-    background: #333;
+    background-color: #333;
     color: white;
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
-header button {
-    background: #5cb85c;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+header p {
+    font-size: 1.2em;
 }
 
-header button a {
+button a {
     text-decoration: none;
     color: white;
-}
-
-/* About Section */
-#about {
-    background: #f4f4f4;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#about h2 {
-    margin-bottom: 20px;
-}
-
-/* Projects Section */
-#projects {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.project {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.project img {
-    width: 100px;
-    height: 100px;
+    padding: 10px 20px;
+    background-color: #007bff;
     border-radius: 5px;
 }
 
-.project-info {
-    max-width: 600px;
-    margin-left: 20px;
+section {
+    padding: 40px 0;
+    text-align: center;
 }
 
-.project-info h3 {
-    margin-bottom: 10px;
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.project-info a {
-    text-decoration: none;
-    color: #5cb85c;
-    font-weight: bold;
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
 }
 
-/* Contact Section */
-#contact {
-    background: #333;
-    color: white;
-    padding: 40px 20px;
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact input, #contact textarea {
-    width: 80%;
+form input, form textarea {
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-#contact button {
-    background: #5cb85c;
-    border: none;
+form button {
     padding: 10px 20px;
+    background-color: #007bff;
     color: white;
-    font-size: 16px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#contact #form-status {
-    margin-top: 20px;
-    color: #ff0000;
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
 
-/* Footer Styles */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* Skills Section styling */
+#skills ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#skills p {
+    font-size: 1.1em;
+    margin-top: 20px;
 }
