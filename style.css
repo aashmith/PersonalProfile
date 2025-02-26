@@ -33,6 +33,12 @@ button a {
     background-color: #007bff;
     border-radius: 5px;
 }
+.header-img {
+    width: 100px;            /* Set the image size */
+    height: 100px;           /* Set the image size */
+    border-radius: 50%;      /* Optional: make the image round */
+    object-fit: cover;       /* Ensure the image covers the circle */
+}
 
 #skills {
 	width: 30%;
