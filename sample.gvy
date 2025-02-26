@@ -1,12 +1,16 @@
 pipeline {
     agent any
-
+    triggers {
+        githubPullRequest {
+            triggerPhrase 'retest this please'
+            onlyTriggerPhrase false
+            useGitHubHooks true
+        }
+    }
     stages {
-        stage('Hello Stage') {
+        stage('Build') {
             steps {
-                script {
-                    echo 'Hello'
-                }
+                echo 'Building...'
             }
         }
     }
