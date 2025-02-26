@@ -40,26 +40,77 @@ button a {
     object-fit: cover;       /* Ensure the image covers the circle */
 }
 
-section {
-    padding: 40px 0;
-    text-align: center;
+#skills {
+	width: 30%;
+	float: left; /* Aligns section to the left */
+	padding: 20px;
+	background: transparent; /* Transparent background */
+	border-radius: 8px;
+}
+
+.container {
+	font-family: Arial, sans-serif;
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+	font-size: 24px;
+	color: #222; /* Darker for better contrast */
+	margin-bottom: 15px;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 20px;
+	list-style: none;
+	padding: 0;
 }
 
-ul li {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+li {
+	margin: 10px 0;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
+
+.progress-bar {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+	border-radius: 5px;
+	height: 10px;
+	overflow: hidden;
+	margin-left: 10px;
+	flex-grow: 1;
+}
+
+.progress {
+	height: 100%;
+	background: #4caf50;
+	border-radius: 5px;
+}
+
+i {
+	font-size: 20px;
+	color: #fff; /* Skill icons stay white */
+}
+
+.skill-text {
+	color: #222; /* Skill names are dark for readability */
+	font-weight: bold;
+}
+
+p, .text-dark {
+	color: #222; /* Other text stays dark */
+}
+
+i.fas.fa-laptop-code { color: #007BFF; }
+i.fab.fa-html5 { color: #E44D26; }   /* HTML - Orange */
+i.fab.fa-css3-alt { color: #264DE4; }  /* CSS - Blue */
+i.fab.fa-js { color: #F7DF1E; }  /* JavaScript - Yellow */
+i.fab.fa-python { color: #306998; }  /* Python - Blue */
+i.fab.fa-jenkins { color: #D24939; }  /* Jenkins - Red */
+i.fab.fa-github { color: #181717; }  /* GitHub - Black */
+i.fas.fa-code { color: #6E5494; }  /* Groovy - Purple */
+i.fas.fa-terminal { color: #4E4E4E; }  /* CAPL - Gray */
+i.fas.fa-file-code { color: #007ACC; }  /* Batch - Blue */
 
 form input, form textarea {
     width: 100%;
